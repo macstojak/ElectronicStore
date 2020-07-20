@@ -1,0 +1,38 @@
+.container{
+   
+}
+.cartContainer:hover{
+    animation: pulse 0.5s linear alternate;
+}
+.cartContainer{
+    position: fixed;
+    margin: 180px 180px 0 0;
+}
+.cartImage{
+display: block;
+}
+.counter{
+    display: block;
+    margin:0 auto;
+    border-radius:50%;
+    height: 50px;
+    width: 80%;
+    font-size:20px;
+    color: blue;
+    margin: 0 auto;
+}
+
+@keyframes onStart{
+    0% {margin-right:55px}
+    25% {margin-right:35px}
+    50% {margin-right:55px}
+    75% {margin-right: 75px}
+    100% {margin-right:55px}
+}
+@keyframes pulse{
+    0% {filter:blur(0px)}
+    25% {filter:blur(4px)}
+    50% {filter:blur(0px)}
+    75% {filter:blur(4px)}
+    100% {filter:blur(0px)}
+}
